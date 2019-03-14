@@ -47,7 +47,9 @@
     @section('js')
        <script>
         var ue = UE.getEditor('container', {
-            toolbars: [['bold', 'italic', 'underline', 'simpleupload' ,'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc','fullscreen', 'source', 'undo', 'redo']],
+            toolbars: [
+                ['bold', 'italic', 'underline', 'strikethrough', 'blockquote', 'insertunorderedlist', 'insertorderedlist', 'justifyleft','justifycenter', 'justifyright',  'link', 'insertimage', 'fullscreen']
+            ],
             elementPathEnabled: true,
             enableContextMenu: true,
             autoClearEmptyNode: true,

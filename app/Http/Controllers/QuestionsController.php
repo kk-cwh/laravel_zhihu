@@ -48,7 +48,6 @@ class QuestionsController extends Controller
      */
     public function store(Request $request)
     {
-        $topics = $this->normalizeTopic($request->input('topics'));
         $this->validate($request, [
             'title' => 'required|string|min:6|max:200',
             'body' => 'required|string|min:20',
@@ -56,6 +55,8 @@ class QuestionsController extends Controller
         $inputs = $request->only(['title', 'body', 'topics']);
         $inputs['user_id'] = auth()->user()->id;
         $question = $this->questionRepository->create($inputs);
+        $topics = $this->normalizeTopic($request->input('topics'));
+
         if ($topics && count($topics)) {
             $question->topics()->sync($topics);
         }
