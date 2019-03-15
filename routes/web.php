@@ -18,3 +18,5 @@ Auth::routes();
 Route::get('/home', 'QuestionsController@index')->name('home');
 Route::get('email/verify/{token}', 'EmailController@verify')->name('email.verify');
 Route::resource('questions', 'QuestionsController');
+
+Route::post('questions/{question_id}/answer', 'AnswerController@store');

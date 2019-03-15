@@ -13,7 +13,7 @@ class QuestionRepository
 
     public function findByIdWithTopics(int $id)
     {
-        return Question::with('topics')->find($id);
+        return Question::with(['topics', 'answers'])->find($id);
     }
 
     public function findById(int $id)
