@@ -48,4 +48,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(Answer::class);
     }
+
+    public function questions()
+    {
+        return $this->belongsToMany(Question::class, 'user_questions', 'user_id', 'question_id')->withTimestamps();
+    }
+
+    public function followed($questionId)
+    {
+        return $this->questions()->where('question_id', $questionId)->count();
+    }
 }

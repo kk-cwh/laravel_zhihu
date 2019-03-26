@@ -134,6 +134,14 @@ class QuestionsController extends Controller
     {
     }
 
+    public function follow($id)
+    {
+        $user = Auth::user();
+        $user->questions()->toggle($id);
+
+        return back();
+    }
+
     private function normalizeTopic($topics)
     {
         return collect($topics)->map(function ($topic) {
