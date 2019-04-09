@@ -2,7 +2,7 @@
   <div>
     <Form label-position="right" :label-width="70" inline>
       <FormItem :label-width="1">
-        <Button @click="showAddModal" type="primary" icon="plus">新增</Button>
+        <Button @click="showAddModal" type="primary" icon="ios-add-circle-outline">新增</Button>
       </FormItem>
       <FormItem label="状态:" class="">
         <Select v-model="query.state" style="width:100px">
@@ -152,7 +152,7 @@ export default {
         //         {
         //           props: {
         //             type: 'success',
-        //             icon: 'compose',
+        //             icon: 'ios-create-outline',
         //             size: 'small'
         //           },
         //           style: {
@@ -320,7 +320,7 @@ export default {
                 {
                   props: {
                     type: 'success',
-                    icon: 'compose',
+                    icon: 'ios-create-outline',
                     size: 'small'
                   },
                   style: {

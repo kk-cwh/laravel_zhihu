@@ -429,7 +429,7 @@ export default {
         //         {
         //           props: {
         //             type: 'primary',
-        //             icon: 'compose',
+        //             icon: 'ios-create-outline',
         //             size: 'small'
         //           },
         //           style: {
@@ -641,7 +641,7 @@ export default {
                 {
                   props: {
                     type: 'primary',
-                    icon: 'compose',
+                    icon: 'ios-create-outline',
                     size: 'small'
                   },
                   style: {

@@ -2,7 +2,7 @@
   <div>
     <Form label-position="right" :label-width="70" inline>
       <!-- <FormItem :label-width="1">
-        <Button @click="showAddModal" type="primary" icon="plus">调整玩家携带金币</Button>
+        <Button @click="showAddModal" type="primary" icon="ios-add-circle-outline">调整玩家携带金币</Button>
       </FormItem> -->
       <FormItem label="ID:" class="">
         <Input clearable type="text" v-model="query.userid" placeholder="填写玩家ID"></Input>

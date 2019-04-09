@@ -4,7 +4,7 @@
       <FormItem :label-width="1">
         <Button @click="showAddModal"
                 type="error"
-                icon="plus">发红包</Button>
+                icon="ios-add-circle-outline">发红包</Button>
       </FormItem>
       <FormItem :label-width="1">
         <Button @click="showAddEmailModal"
@@ -345,7 +345,7 @@ export default {
                 {
                   props: {
                     type: 'success',
-                    icon: 'compose',
+                    icon: 'ios-create-outline',
                     size: 'small'
                   },
                   style: {

@@ -118,7 +118,7 @@ export default {
                 {
                   props: {
                     type: 'success',
-                    icon: 'compose',
+                    icon: 'ios-create-outline',
                     size: 'small'
                   },
                   style: {
@@ -264,7 +264,7 @@ export default {
               {
                 props: {
                   type: 'success',
-                  icon: 'compose',
+                  icon: 'ios-create-outline',
                   size: 'small'
                 },
                 style: {

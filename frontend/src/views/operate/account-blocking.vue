@@ -6,7 +6,7 @@
       <FormItem :label-width="1">
         <Button @click="showAddModal"
                 type="primary"
-                icon="plus">封锁玩家账号</Button>
+                icon="ios-add-circle-outline">封锁玩家账号</Button>
       </FormItem>
       <FormItem label="ID:"
                 class="">

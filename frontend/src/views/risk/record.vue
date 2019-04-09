@@ -56,7 +56,7 @@ export default {
                 {
                   props: {
                     type: (params.row.status === 1) ? 'text' : 'warning',
-                    // icon: 'compose',
+                    // icon: 'ios-create-outline',
                     size: 'small'
                   },
                   style: {

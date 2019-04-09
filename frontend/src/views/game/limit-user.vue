@@ -4,7 +4,7 @@
      <FormItem :label-width="1">
         <Button @click="showAddModal"
                 type="error"
-                icon="plus">添加忽略名单</Button>
+                icon="ios-add-circle-outline">添加忽略名单</Button>
       </FormItem>
       <FormItem label="ID:" class="">
         <Input clearable type="text" v-model="query.UserID" placeholder="填写玩家ID"></Input>
@@ -209,7 +209,7 @@ export default {
                 {
                   props: {
                     type: 'success',
-                    icon: 'compose',
+                    icon: 'ios-create-outline',
                     size: 'small'
                   },
                   style: {

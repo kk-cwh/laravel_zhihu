@@ -4,7 +4,7 @@
      <FormItem :label-width="1">
         <Button @click="showAddModal"
                 type="error"
-                icon="plus">添加过滤字符</Button>
+                icon="ios-add-circle-outline">添加过滤字符</Button>
       </FormItem>
       <FormItem>
         <Button type="primary" @click="toQuery" :loading="queryLoading" icon="ios-search">查询</Button>
@@ -206,7 +206,7 @@ export default {
                 {
                   props: {
                     type: 'success',
-                    icon: 'compose',
+                    icon: 'ios-create-outline',
                     size: 'small'
                   },
                   style: {

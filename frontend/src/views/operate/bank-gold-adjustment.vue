@@ -6,7 +6,7 @@
       <FormItem :label-width="1">
         <Button @click="showAddModal"
                 type="primary"
-                icon="plus">调整玩家银行金币</Button>
+                icon="ios-add-circle-outline">调整玩家银行金币</Button>
       </FormItem>
       <FormItem label="ID:"
                 class="">

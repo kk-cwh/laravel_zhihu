@@ -169,7 +169,7 @@ export default {
         //                 {
         //                     props: {
         //                         type: "error",
-        //                         // icon: "compose",
+        //                         // icon: "ios-create-outline",
         //                         size: "small"
         //                     },
         //                     style: {
