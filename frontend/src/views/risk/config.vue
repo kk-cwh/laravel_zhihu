@@ -83,7 +83,7 @@
           <Button type="warning" icon="android-cancel" @click="allCancel" >全部取消</Button>
           </Col>
           <Col span="12" style="text-align:right;padding-right:50px;">
-          <Button type="ghost" icon="android-refresh" @click="refreshLoad">重置</Button>
+          <Button  icon="android-refresh" @click="refreshLoad">重置</Button>
           <Button type="success" icon="filing"  :loading="loading" @click="toSave">保存</Button>
           </Col>
         </Row>

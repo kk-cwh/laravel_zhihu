@@ -48,7 +48,7 @@ export default {
       showFormItem1: false,
       btTypes: ['', '', '', ''],
       room_names: [{ label: '全部', value: 0 }, { label: '充值', value: '充值' }, { label: '其他', value: '其他' }],
-      tagTypes: ['ghost', 'ghost', 'ghost'],
+      tagTypes: ['', '', '',''],
       game_types: [{ label: '红黑大战', value: '红黑大战' }, { label: '百家乐', value: '百家乐' }, { label: '摇一摇', value: '摇一摇' }, { label: '百人牛牛', value: '百人牛牛' }, { label: '豪车俱乐部', value: '豪车俱乐部' }, { label: '欢乐斗地主', value: '欢乐斗地主' }, { label: '二人麻将', value: '二人麻将' }, { label: '捕鱼', value: '捕鱼' },
         { label: '神兽转盘', value: '神兽转盘' }, { label: '水果机', value: '水果机' }, { label: '四人牛牛', value: '四人牛牛' }, { label: '拼三张', value: '拼三张' }, { label: '十三张', value: '十三张' }, { label: '财神红包', value: '财神红包' }, { label: '扫雷红包', value: '扫雷红包' }],
       tagType: 0,
@@ -87,23 +87,23 @@ export default {
     clickTagBtn (type) {
       this.showFormItem1 = false
       if (type === 0) {
-        this.tagTypes = ['primary', 'ghost', 'ghost', 'ghost']
+        this.tagTypes = ['primary', '', '', '']
         this.tagType = 0
         this.showFormItem = false
       }
       if (type === 1) {
-        this.tagTypes = ['ghost', 'primary', 'ghost', 'ghost']
+        this.tagTypes = ['', 'primary', '', '']
         this.tagType = 1
         this.showFormItem = true
         this.showFormItem1 = true
       }
       if (type === 2) {
-        this.tagTypes = ['ghost', 'ghost', 'primary', 'ghost']
+        this.tagTypes = ['', '', 'primary', '']
         this.tagType = 2
         this.showFormItem = true
       }
       if (type === 3) {
-        this.tagTypes = ['ghost', 'ghost', 'ghost', 'primary']
+        this.tagTypes = ['', '', '', 'primary']
         this.tagType = 3
         this.showFormItem = true
       }
